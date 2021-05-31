@@ -147,10 +147,26 @@ button[disabled=disabled], button:disabled {
 }
 
 #filtrar-tabela {
+	position: absolute;
 	width: 200px;
 	height: 35px;
 	margin-bottom: 10px;
 }
+
+#buscar-pacientes {
+	margin-left: 220px;
+	width: 200px;
+	margin-top: -5px;
+}
+
+#side-by-side {
+	display: inline-block;
+}
+
+#adicionar-paciente{
+    width: 200px;
+}
+
 
 .invisivel {
 	display: none;

@@ -7,9 +7,7 @@ const titulo = document.querySelector(".titulo");
 titulo.textContent = "Aparecida Nutricionista";
 
 const pacientes = document.querySelectorAll(".paciente");
-
-const paciente = pacientes.map(paciente => {
-
+const paciente = pacientes.forEach(paciente => {
     let tdPeso = paciente.querySelector(".info-peso");
     let peso = tdPeso.textContent;
 
@@ -35,9 +33,6 @@ const paciente = pacientes.map(paciente => {
         paciente.classList.add("paciente-invalido");
     }
 
-    if (pesoEhValido && alturaEhValida) {
-        var imc = calculaImc(peso, altura);
-        tdImc.textContent = imc;
-    }
+    if (pesoEhValido && alturaEhValida) tdImc.textContent = calculaImc(peso, altura);
 })
 
