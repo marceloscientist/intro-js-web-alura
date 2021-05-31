@@ -4,7 +4,7 @@
 
 body{
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 header{
@@ -15,7 +15,7 @@ header{
 }
 
 header h1{
-	font-size: 2em;
+	font-size: 1.2em;
 	display:inline-block;
 	vertical-align:	middle;
 }
@@ -32,10 +32,15 @@ header .container:before{
 	vertical-align:	middle;
 }
 
+#header {
+	margin-top: 0px;
+}
 .container{
 	width: 60%;
 	height: 100%;
 	margin: 0 auto;
+	margin-top: 50px;
+	
 }
 
 section{
@@ -44,7 +49,8 @@ section{
 }
 
 section h2{
-	font-size: 3em;
+	font-size: 1.7em;
+	font-weight: 600;
 	display: block;
 	padding-bottom: .5em;
 	border-bottom: 1px solid #ccc;
@@ -80,7 +86,6 @@ label{
 	margin: 0;
 	padding-bottom: 1em;
 	width: 100%;
-	border: 1px solid #ccc;
 	padding: .7em;
 	width: 100%;
 }
@@ -100,12 +105,13 @@ button{
 	padding: .5em 2em;
 	border: 0;
 	border-bottom: 3px solid;
+	border-radius: 6px;
 	font-size: 1.2em;
 	cursor: pointer;
 	margin: 0;
 	margin-top: -3px;
 	color: #fff;
-	background-color:#0c8cd3;
+	background-color:#15597e;
 	border-color: #04324c;
 	width: 20%;
     display: block;
@@ -151,12 +157,13 @@ button[disabled=disabled], button:disabled {
 	width: 200px;
 	height: 35px;
 	margin-bottom: 10px;
+	padding: 0.7em;
 }
 
 #buscar-pacientes {
 	margin-left: 220px;
 	width: 200px;
-	margin-top: -5px;
+	margin-top: 0px;
 }
 
 #side-by-side {
@@ -170,4 +177,8 @@ button[disabled=disabled], button:disabled {
 
 .invisivel {
 	display: none;
+}
+
+input {
+	border-radius: 6px;
 }

@@ -2,10 +2,6 @@ const calculaImc = (peso, altura) => (peso / (altura * altura)).toFixed(2);
 const validaPeso = (peso) => (peso >= 0 && peso <= 1000)? true: false;  
 const validaAltura = (altura) => (altura >= 0 && altura <= 3.00)? true: false;
 
-
-const titulo = document.querySelector(".titulo");
-titulo.textContent = "Aparecida Nutricionista";
-
 const pacientes = document.querySelectorAll(".paciente");
 const paciente = pacientes.forEach(paciente => {
     let tdPeso = paciente.querySelector(".info-peso");
